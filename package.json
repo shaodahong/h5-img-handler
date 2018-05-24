@@ -1,0 +1,15 @@
+{
+  "name": "h5-img-handler",
+  "version": "0.0.1",
+  "description": "h5 image handler",
+  "script": {
+    "dev": "NODE_ENV=dev webpack-dev-server --host 0.0.0.0 --progress --config build/webpack.dev.js"
+  },
+  "main": "lib/index.js",
+  "repository": "git@github.com:shaodahong/h5-img-handler.git",
+  "author": "shaodahong <337097324@qq.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.8.3"
+  }
+}
