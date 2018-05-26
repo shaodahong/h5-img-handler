@@ -2,14 +2,21 @@
   "name": "h5-img-handler",
   "version": "0.0.1",
   "description": "h5 image handler",
-  "script": {
-    "dev": "NODE_ENV=dev webpack-dev-server --host 0.0.0.0 --progress --config build/webpack.dev.js"
+  "scripts": {
+    "dev": "npx webpack-dev-server --mode development --config build/webpack.dev.js --color --progress --hot --watch",
+    "build": "npx webpack --mode production --config build/webpack.dev.js"
   },
   "main": "lib/index.js",
   "repository": "git@github.com:shaodahong/h5-img-handler.git",
   "author": "shaodahong <337097324@qq.com>",
   "license": "MIT",
   "devDependencies": {
-    "webpack": "^4.8.3"
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.8.3",
+    "webpack-cli": "^2.1.4",
+    "webpack-dev-server": "^3.1.4"
   }
 }
